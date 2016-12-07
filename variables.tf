@@ -34,7 +34,7 @@ variable "enable_nat_gateway" {
 
 variable "map_public_ip_on_launch" {
   description = "should be false if you do not want to auto-assign public IP on launch"
-  default     = true
+  default     = false
 }
 
 variable "private_propagating_vgws" {
