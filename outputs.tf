@@ -6,10 +6,6 @@ output "public_subnets" {
   value = ["${aws_subnet.public.*.id}"]
 }
 
-output "region" {
-  value = "${aws_vpc.mod.region}"
-}
-
 output "vpc_id" {
   value = "${aws_vpc.mod.id}"
 }
