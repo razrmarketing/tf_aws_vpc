@@ -2,7 +2,10 @@ variable "name" {}
 
 variable "cidr" {}
 
-variable "region" {}
+variable "region" {
+  description = "AWS region for the VPC."
+  default     = []
+}
 
 variable "public_subnets" {
   description = "A list of public subnets inside the VPC."
