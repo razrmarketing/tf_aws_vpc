@@ -2,6 +2,8 @@ variable "name" {}
 
 variable "cidr" {}
 
+variable "region" {}
+
 variable "public_subnets" {
   description = "A list of public subnets inside the VPC."
   default     = []
