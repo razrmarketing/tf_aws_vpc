@@ -2,7 +2,8 @@ resource "aws_vpc" "mod" {
   cidr_block           = "${var.cidr}"
   enable_dns_hostnames = "${var.enable_dns_hostnames}"
   enable_dns_support   = "${var.enable_dns_support}"
-  instance_tenancy     = "${var.vm_tenancy}"
+  # uncomment when ready to run for realz on things - bitch of a problem
+  # could not get it to take any variable unfortunately
   #instance_tenancy     = "dedicated"
 
   tags {
