@@ -1,7 +1,9 @@
-vpc terraform module
+VPC terraform module
 ===========
 
 A terraform module to provide a VPC in AWS.
+
+HAS 'instance_tenancy = "dedicated"' SET
 
 
 Module Input Variables

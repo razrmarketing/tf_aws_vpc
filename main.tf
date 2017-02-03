@@ -4,7 +4,7 @@ resource "aws_vpc" "mod" {
   enable_dns_support   = "${var.enable_dns_support}"
   # uncomment when ready to run for realz on things - bitch of a problem
   # could not get it to take any variable unfortunately
-  #instance_tenancy     = "dedicated"
+  instance_tenancy     = "dedicated"
 
   tags {
     Name = "${var.name}"
