@@ -1,5 +1,11 @@
 variable "name" {}
 
+variable "owner" {}
+
+variable "product" {}
+
+variable "env" {}
+
 variable "cidr" {}
 
 variable "public_subnets" {

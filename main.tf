@@ -8,6 +8,9 @@ resource "aws_vpc" "mod" {
 
   tags {
     Name = "${var.name}"
+    "razr:env" = "${var.env}"
+    "razr:owner" = "${var.owner}"
+    "razr:product" = "${var.product}"
   }
 }
 
@@ -16,6 +19,9 @@ resource "aws_internet_gateway" "mod" {
 
   tags {
     Name = "${var.name}-igw"
+    "razr:env" = "${var.env}"
+    "razr:owner" = "${var.owner}"
+    "razr:product" = "${var.product}"
   }
 }
 
