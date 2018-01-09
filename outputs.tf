@@ -14,8 +14,12 @@ output "main_route_table_id" {
   value = "${aws_vpc.mod.main_route_table_id}"
 }
 
+# output "cidr" {
+#   value = "${aws_vpc.mod.cidr}"
+# }
+
 output "cidr" {
-  value = "${aws_vpc.mod.cidr}"
+  value = "${var.cidr}"
 }
 
 output "public_route_table_ids" {
